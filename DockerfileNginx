@@ -1,0 +1,7 @@
+FROM nginx:latest
+
+RUN apt-get update -yqq 
+
+RUN chown -R nginx:nginx /usr/share/nginx/*
+
+RUN chmod 755 -R /usr/share/nginx/* 
